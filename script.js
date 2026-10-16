@@ -1,4 +1,3 @@
-// ---- SKILLS DATA: [icon, name, category, level % (or null), note] ----
 var skills = [
   ["🌐", "HTML", "Frontend", 85, ""],
   ["🎨", "CSS", "Frontend", 75, ""],
@@ -12,7 +11,6 @@ var skills = [
   ["🎖️", "Class President", "Soft Skills", null, "Grade 11 & Grade 12"]
 ];
 
-// ---- Build skill cards ----
 var grid = document.getElementById('skillGrid');
 skills.forEach(function (s) {
   var d = document.createElement('div');
@@ -25,7 +23,6 @@ skills.forEach(function (s) {
   grid.appendChild(d);
 });
 
-// ---- Skill filter buttons ----
 document.getElementById('filters').addEventListener('click', function (e) {
   var b = e.target.closest('button');
   if (!b) return;
@@ -37,7 +34,6 @@ document.getElementById('filters').addEventListener('click', function (e) {
   });
 });
 
-// ---- Scroll reveal + skill bars ----
 var io = new IntersectionObserver(function (entries) {
   entries.forEach(function (x) {
     if (x.isIntersecting) {
@@ -50,7 +46,6 @@ var io = new IntersectionObserver(function (entries) {
 }, { threshold: 0.15 });
 document.querySelectorAll('.reveal').forEach(function (r) { io.observe(r); });
 
-// ---- Highlight current section in nav ----
 var links = document.querySelectorAll('nav ul a');
 window.addEventListener('scroll', function () {
   var cur = 'home';
@@ -62,7 +57,6 @@ window.addEventListener('scroll', function () {
   });
 });
 
-// ---- Light / dark toggle ----
 var tb = document.getElementById('theme');
 tb.addEventListener('click', function () {
   var root = document.documentElement;
@@ -71,3 +65,18 @@ tb.addEventListener('click', function () {
   root.dataset.theme = dark ? 'light' : 'dark';
   tb.textContent = dark ? '🌙' : '☀️';
 });
+
+var modal = document.getElementById('certModal');
+var certImg = document.getElementById('certImg');
+
+document.querySelectorAll('.cert-btn').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    certImg.src = btn.dataset.img;
+    modal.classList.add('open');
+  });
+});
+
+function closeCert() { modal.classList.remove('open'); }
+document.getElementById('certClose').addEventListener('click', closeCert);
+modal.addEventListener('click', function (e) { if (e.target === modal) closeCert(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeCert(); });
