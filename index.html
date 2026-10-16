@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Web Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#home">YN.</a>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#awards">Certs &amp; Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="theme" aria-label="Toggle theme">🌙</button></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div>
+    <span class="num">WELCOME</span>
+    <h1>Hi, I'm Your Name.</h1>
+    <!-- Write your short intro here -->
+    <p id="intro">Write your short introduction here. Tell visitors who you are, what you study, and what you like to build.</p>
+    <a class="btn" href="#contact">Get in Touch</a>
+    <a class="btn alt" href="#skills">View Skills</a>
+  </div>
+
+  <!-- PICTURE SHELL: replace the placeholder text with <img src="images/me.jpg" alt="Photo of me"> -->
+  <div class="photo-shell">
+    <span>Your photo here</span>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="reveal">
+  <span class="num">01</span>
+  <h2>Education</h2>
+
+  <div class="card edu">
+    <!-- IMAGE SHELL: put your school logo here, e.g. <img src="images/college.png" alt="School logo"> -->
+    <div class="logo-shell"><span>Logo</span></div>
+    <div>
+      <span class="tag">College</span>
+      <h3>Your University Name</h3>
+      <div>Bachelor of Science in Information Technology</div>
+      <div class="muted">2024 – Present</div>
+    </div>
+  </div>
+
+  <div class="card edu">
+    <!-- IMAGE SHELL -->
+    <div class="logo-shell"><span>Logo</span></div>
+    <div>
+      <span class="tag">Senior High School</span>
+      <h3>Your Senior High School</h3>
+      <div>TVL – ICT Strand</div>
+      <div class="muted">2022 – 2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <span class="num">02</span>
+  <h2>Skills &amp; Tech Stack</h2>
+  <div class="filters" id="filters">
+    <button class="on" data-f="All">All</button>
+    <button data-f="Frontend">Frontend</button>
+    <button data-f="Tools">Tools</button>
+    <button data-f="Certified">Certified</button>
+    <button data-f="Soft Skills">Soft Skills</button>
+  </div>
+  <div class="skills" id="skillGrid"></div>
+</section>
+
+<!-- CERTIFICATIONS & AWARDS -->
+<section id="awards" class="reveal">
+  <span class="num">03</span>
+  <h2>Certifications &amp; Awards</h2>
+
+  <h3>Certifications</h3>
+  <div class="grid" style="margin-bottom:2rem">
+    <div class="card">
+      <span class="status">Done</span>
+      <div class="muted">Grade 12</div>
+      <h3>National Certificate II<br>Computer Systems Servicing</h3>
+      <div class="muted">TESDA</div>
+    </div>
+    <div class="card">
+      <span class="status">Done</span>
+      <div class="muted">Year</div>
+      <h3>Cisco Packet Tracer</h3>
+      <div class="muted">Cisco Networking Academy</div>
+    </div>
+  </div>
+
+  <h3>Awards</h3>
+  <div class="grid">
+    <div class="card"><div style="font-size:1.8rem">🏅</div><h3>Dean's Lister</h3><div class="muted">Your University · 2026</div></div>
+    <div class="card"><div style="font-size:1.8rem">🎓</div><h3>Academic Excellence Recognition</h3><div class="muted">Your Senior High School · 2024</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <span class="num">04</span>
+  <h2>Contact</h2>
+  <p>Let's connect using the following platforms:</p>
+  <a class="btn" href="mailto:yourname@email.com">yourname@email.com →</a>
+  <a class="btn alt" href="tel:+639000000000">+63 900 000 0000 →</a>
+  <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub →</a>
+</section>
+
+<footer>© 2026 Your Name · Made with HTML, CSS &amp; JavaScript</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
