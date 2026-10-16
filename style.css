@@ -20,7 +20,6 @@
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.6}
 
-/* NAV */
 nav{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:.8rem 1.2rem;background:var(--bg);border-bottom:1px solid var(--line)}
 nav .logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.2rem}
 nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;align-items:center}
@@ -28,28 +27,23 @@ nav a{color:var(--text);text-decoration:none;font-size:.9rem}
 nav a:hover,nav a.on{color:var(--accent)}
 #theme{border:1px solid var(--line);background:var(--card);border-radius:99px;cursor:pointer;padding:.2rem .6rem;color:var(--text)}
 
-/* LAYOUT */
 section{max-width:900px;margin:0 auto;padding:3.5rem 1.2rem}
 .num{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.1em}
 h2{margin:.2rem 0 1.5rem;font-size:1.7rem}
 
-/* HERO */
 .hero{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;min-height:70vh}
 .hero>div:first-child{flex:1 1 300px}
 .hero h1{font-size:2.4rem;margin:.2rem 0}
 .hero p{color:var(--muted);font-size:1.05rem}
 
-/* IMAGE SHELLS (placeholders) */
 .photo-shell{flex:0 0 200px;width:200px;height:240px;border-radius:24px;border:2px dashed var(--accent);background:linear-gradient(135deg,var(--pink),var(--lav));display:grid;place-items:center;color:var(--muted);font-size:.9rem;overflow:hidden}
 .photo-shell img,.logo-shell img{width:100%;height:100%;object-fit:cover;display:block}
 .logo-shell{flex:0 0 80px;width:80px;height:80px;border-radius:16px;border:2px dashed var(--accent);background:var(--lav);display:grid;place-items:center;color:var(--muted);font-size:.75rem;overflow:hidden}
 
-/* BUTTONS */
 .btn{display:inline-block;padding:.6rem 1.2rem;border-radius:99px;text-decoration:none;font-size:.9rem;margin:.3rem .4rem .3rem 0;background:var(--lav);color:var(--text);transition:transform .2s}
 .btn.alt{background:var(--pink)}
 .btn:hover{transform:translateY(-2px)}
 
-/* CARDS */
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.2rem 1.4rem;margin-bottom:1.2rem}
 .card h3{margin:.1rem 0}
 .edu{display:flex;gap:1.2rem;align-items:center}
@@ -58,7 +52,6 @@ h2{margin:.2rem 0 1.5rem;font-size:1.7rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
 .status{float:right;font-size:.75rem;padding:.1rem .6rem;border-radius:99px;background:var(--sky)}
 
-/* SKILLS */
 .filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
 .filters button{background:var(--card);border:1px solid var(--line);color:var(--text);padding:.35rem .9rem;border-radius:99px;cursor:pointer}
 .filters button.on{background:var(--lav)}
@@ -74,7 +67,6 @@ h2{margin:.2rem 0 1.5rem;font-size:1.7rem}
 .bar{height:6px;border-radius:9px;background:rgba(0,0,0,.08);margin-top:.5rem;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width 1s}
 
-/* MISC */
 footer{text-align:center;color:var(--muted);padding:2rem 1rem;font-size:.85rem}
 .reveal{opacity:0;transform:translateY(16px);transition:all .6s}
 .reveal.in{opacity:1;transform:none}
