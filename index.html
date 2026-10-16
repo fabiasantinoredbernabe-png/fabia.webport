@@ -7,9 +7,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <nav>
-  <a class="logo" href="#home">SRBF.</a>
+  <a class="logo" href="#home">WELCOME</a>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#education">Education</a></li>
@@ -19,7 +19,7 @@
     <li><button id="theme" aria-label="Toggle theme">🌙</button></li>
   </ul>
 </nav>
-
+ 
 <!-- HOME -->
 <section id="home" class="hero">
   <div>
@@ -30,21 +30,19 @@
     <a class="btn" href="#contact">Get in Touch</a>
     <a class="btn alt" href="#skills">View Skills</a>
   </div>
-
-  <img src="redpfp.jpg" alt="Photo of me">
+ 
   <div class="photo-shell">
-    <span>Your Photo</span>
+    <span><img src="redpfp.jpg" alt="Photo of me"></span>
   </div>
 </section>
-
+ 
 <!-- EDUCATION -->
 <section id="education" class="reveal">
   <span class="num">01</span>
   <h2>Education</h2>
-
+ 
   <div class="card edu">
-    <img src="puplogo.png" alt="School logo">
-    <div class="logo-shell"><span>Logo</span></div>
+    <div class="logo-shell"><span><img src="puplogo.png" alt="School logo"></span></div>
     <div>
       <span class="tag">College</span>
       <h3>Polytechnic University of the Philippines</h3>
@@ -52,10 +50,9 @@
       <div class="muted">2024 – Present</div>
     </div>
   </div>
-
+ 
   <div class="card edu">
-    <img src="jmplogo.jpg" alt="School logo">
-    <div class="logo-shell"><span>Logo</span></div>
+    <div class="logo-shell"><span><img src="jmplogo.jpg" alt="School logo"></span></div>
     <div>
       <span class="tag">Senior High School</span>
       <h3>Jose Maria Panganiban Senior High School</h3>
@@ -64,7 +61,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- SKILLS -->
 <section id="skills" class="reveal">
   <span class="num">02</span>
@@ -78,12 +75,12 @@
   </div>
   <div class="skills" id="skillGrid"></div>
 </section>
-
+ 
 <!-- CERTIFICATIONS & AWARDS -->
 <section id="awards" class="reveal">
   <span class="num">03</span>
   <h2>Certifications &amp; Awards</h2>
-
+ 
   <h3>Certifications</h3>
   <div class="grid" style="margin-bottom:2rem">
     <div class="card">
@@ -97,28 +94,38 @@
       <div class="muted">2025</div>
       <h3>Networking Basics</h3>
       <div class="muted">Cisco Networking Academy</div>
+      <button class="cert-btn" data-img="images/cisco-certificate.png">📄 Certificate</button>
     </div>
   </div>
-
+ 
   <h3>Awards</h3>
   <div class="grid">
     <div class="card"><div style="font-size:1.8rem">🏅</div><h3>Dean's Lister</h3><div class="muted">Your University · 2026</div></div>
     <div class="card"><div style="font-size:1.8rem">🎓</div><h3>Academic Excellence Recognition</h3><div class="muted">Your Senior High School · 2024</div></div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section id="contact" class="reveal">
   <span class="num">04</span>
   <h2>Contact</h2>
   <p>Let's connect using the following platforms:</p>
-  <a class="btn" href="mailto:yourname@email.com">yourname@email.com →</a>
-  <a class="btn alt" href="tel:+639000000000">+63 900 000 0000 →</a>
-  <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub →</a>
+  <a class="btn" href="mailto:fabia.santinored.bernabe@gmail.com">fabia.santinored.bernabe@gmail.com →</a>
+  <a class="btn alt" href="tel:+639000000000">+63 936 527 3321 →</a>
+  <a class="btn" href="https://github.com/fabiasantinoredbernabe-png" target="_blank" rel="noopener">GitHub →</a>
 </section>
-
-<footer>© 2026 Your Name · Made with HTML, CSS &amp; JavaScript</footer>
-
+ 
+<footer>© 2026 Santino Red B. Fabia · Made with HTML, CSS &amp; JavaScript</footer>
+ 
+<!-- CERTIFICATE POP-UP (shows the image when a Certificate button is clicked) -->
+<div class="modal" id="certModal">
+  <span class="modal-close" id="certClose">&times;</span>
+  <img id="certImg" src="" alt="Certificate">
+</div>
+ 
 <script src="script.js"></script>
 </body>
 </html>
+ 
+
+
